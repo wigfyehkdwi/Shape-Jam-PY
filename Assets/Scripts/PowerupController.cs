@@ -49,6 +49,10 @@ public class PowerupController : MonoBehaviour
             |**** Add your code below ****|
             \*****************************/
 
+            float randomX = Random.Range();
+            Vector3 powerupPosition = new Vector3(randomX, 0.0f, 0.0f);
+            transform.position = powerupPosition;
+            nextDrop = Time.time + dropRate;
 
             /*****************************\
             |**** Add your code above ****|
